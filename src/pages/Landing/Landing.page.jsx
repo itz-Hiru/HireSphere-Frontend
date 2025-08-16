@@ -1,8 +1,10 @@
-import React from 'react'
+import Header from "./components/Header.component"
 
 const Landing = () => {
   return (
-    <div>Landing</div>
+    <div className="min-h-screen">
+      <Header />
+    </div>
   )
 }
 
