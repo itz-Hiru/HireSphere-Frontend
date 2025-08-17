@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import {
-  Mail,
-  Lock,
+  AlertCircle,
+  CheckCircle,
   Eye,
   EyeOff,
   Loader,
-  AlertCircle,
-  CheckCircle,
+  Lock,
+  Mail,
 } from "lucide-react";
 import { useState } from "react";
+import { validateEmail } from "../../utils/helper";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -24,14 +25,6 @@ const Login = () => {
   });
 
   // Validations
-  const validateEmail = (email) => {
-    if (!email.trim()) return "Email is required.";
-
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(email)) return "Please enter valid email address";
-    return "";
-  };
-
   const validatePassword = (password) => {
     if (!password.trim()) return "Password is required";
     return "";
