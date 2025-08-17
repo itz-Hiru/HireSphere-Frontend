@@ -12,6 +12,7 @@ import {
   LayoutDashboard,
   Plus,
   Briefcase,
+  Target,
 } from "lucide-react";
 
 export const stats = [
@@ -71,6 +72,37 @@ export const employerFeatures = [
     title: "Quick Hiring",
     description:
       "Streamlined hiring process reduces time-to-hire by 60% with automated screening tools",
+  },
+];
+
+export const analytics_stats = [
+  {
+    icon: Users,
+    title: "Active Users",
+    value: "2.4M+",
+    growth: "+15%",
+    color: "blue",
+  },
+  {
+    icon: Briefcase,
+    title: "Jobs Posted",
+    value: "150K+",
+    growth: "+22%",
+    color: "purple",
+  },
+  {
+    icon: Target,
+    title: "Successful Hires",
+    value: "89K+",
+    growth: "+18%",
+    color: "green",
+  },
+  {
+    icon: TrendingUp,
+    title: "Match Rate",
+    value: "94%",
+    growth: "+8%",
+    color: "orange",
   },
 ];
 
